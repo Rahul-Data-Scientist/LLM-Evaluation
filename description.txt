@@ -1,0 +1,12 @@
+## Lecture 13 - How to Test RAG Retrievers(Hands-On) | CampusX
+
+1. Created venv using uv and installing the dependencies by running these commands:
+    a. uv init --python 3.11
+    b. uv add langchain-openai langchain-chroma langchain-text-splitters langchain-core chromadb openai sentence-transformers deepeval pytest python-dotenv
+
+2. Created these folders - data, evals, goldens, src
+3. put all the transcript documents in the data folder.
+4. created these files in src folder - __init__.py (to make src folder a module so that evals.eval_retriever can import functions from code files which are present in the src folder), .env, retriever.py and reranker.py (although reranker.py was not created by nitish sir in this lecture. Instead, he pasted the code of reranker.py directly in retriever.py. But I saw a separate file named reranker.py in sir's github repo. So I also used a separate reranker.py for the reranker part. I think in a future lecture, nitish sir will create this separate reranker.py file).
+5. created these files in evals folder - __init__.py (reason discussed in previous point) and eval_retriever.py
+6. downloaded retriever_goldens.json from sir's github repo and put it in the goldens folder. This file contains the golden dataset to test the retriever pipeline.
+7. Tested the retriever pipeline by running this command in the terminal: python -m evals.eval_retriever
