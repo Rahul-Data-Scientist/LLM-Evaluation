@@ -10,3 +10,14 @@
 5. created these files in evals folder - __init__.py (reason discussed in previous point) and eval_retriever.py
 6. downloaded retriever_goldens.json from sir's github repo and put it in the goldens folder. This file contains the golden dataset to test the retriever pipeline.
 7. Tested the retriever pipeline by running this command in the terminal: python -m evals.eval_retriever
+
+
+
+## Lecture 14 - Evaluating RAG: Testing the Generator & Full Pipeline with the RAG Triad | CampusX
+
+1. Downloaded faithfulness_dataset.json from sir's github repo and put it in the goldens folder
+2. Created these files in src folder - generator.py and rag_pipeline.py
+3. Created these files in evals folder - eval_generator.py and eval_rag_pipeline.py
+4. Also included harness.py file in the evals folder (downloaded it from sir's github repo). Although it has not been made byh nitish sir yet (till the current lecture), but I downloaded it anyway as it is just a simple code file which contains 3 basic helper functions.
+5. Ran eval_generator.py and eval_rag_pipeline.py
+6. Also, in the previous content (lecture 13 description above), I forgot to mention that before running the retriever pipeline, make sure you delete the chroma_store folder. Make sure this folder doesn't exist before running the retriever pipeline.
