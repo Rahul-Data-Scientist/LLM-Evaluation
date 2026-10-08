@@ -8,6 +8,7 @@ from deepeval.metrics import (
     AnswerRelevancyMetric,
     ContextualRelevancyMetric,
 )
+from deepeval.evaluate import CacheConfig
 
 from src.rag_pipeline import RagPipeline
 from evals.harness import load_goldens, summarize_by_metric, print_summary
@@ -44,7 +45,7 @@ def run(rag):
     ]
 
     # 4. EVALUATE
-    result = evaluate(test_cases=test_cases, metrics=metrics)
+    result = evaluate(test_cases=test_cases, metrics=metrics, cache_config=CacheConfig(use_cache=False, write_cache=False))
     return summarize_by_metric(result)
 
 

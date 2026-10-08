@@ -21,3 +21,9 @@
 4. Also included harness.py file in the evals folder (downloaded it from sir's github repo). Although it has not been made byh nitish sir yet (till the current lecture), but I downloaded it anyway as it is just a simple code file which contains 3 basic helper functions.
 5. Ran eval_generator.py and eval_rag_pipeline.py
 6. Also, in the previous content (lecture 13 description above), I forgot to mention that before running the retriever pipeline, make sure you delete the chroma_store folder. Make sure this folder doesn't exist before running the retriever pipeline.
+
+
+## Lecture 15 - Mastering G-Eval: The Deterministic LLM-as-a-Judge Framework Explained | CampusX
+1. Downloaded correctness_goldens.json from sir's github repo and put it in the goldens folder
+2. Created eval_application.py in the evals folder
+ 
