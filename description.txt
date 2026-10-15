@@ -26,4 +26,9 @@
 ## Lecture 15 - Mastering G-Eval: The Deterministic LLM-as-a-Judge Framework Explained | CampusX
 1. Downloaded correctness_goldens.json from sir's github repo and put it in the goldens folder
 2. Created eval_application.py in the evals folder
- 
+
+## Lecture 16 - Securing Your RAG Application: Testing for Toxicity, Leakage & Scope Drift | CampusX
+1. Downloaded toxicity_goldens.json from sir's github repo and put it in the goldens folder
+2. Created eval_leakage.py in the evals folder and ran this file
+3. Same thing with this combination - leakage_goldens.json and eval_leakage.py
+4.Same thing with this combination - scope_goldens.json and eval_scope_safety.py
