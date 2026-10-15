@@ -32,3 +32,8 @@
 2. Created eval_leakage.py in the evals folder and ran this file
 3. Same thing with this combination - leakage_goldens.json and eval_leakage.py
 4.Same thing with this combination - scope_goldens.json and eval_scope_safety.py
+
+
+## Lecture 17 - RAG Operational Evals: Building Faster & Cheaper RAG Systems | CampusX
+1. Created eval_leakage.py in the evals folder and ran it.
+2. Same thing with eval_cost.py and eval_reliability.py
