@@ -37,3 +37,9 @@
 ## Lecture 17 - RAG Operational Evals: Building Faster & Cheaper RAG Systems | CampusX
 1. Created eval_leakage.py in the evals folder and ran it.
 2. Same thing with eval_cost.py and eval_reliability.py
+
+## Lecture 18 - RAG Regression Testing Explained: How to Prevent Silent AI Failures
+1. Downloaded these files from sir's github repo and put them in the evals folder: eval_safety.py, eval_ops.py, compare.py, run_suite.py and metric_registry.py
+2. Now, sir did this in the lecture: changed chunk_size to 500 and chunk_overlap to 100 and ran this command in terminal to perform regression testing: python –m evals.run_suite --label “chunk=500 overlap=100” (label use karke hum candidate.json file mein ek metadata add kar de rahe hain yeh wala candidate scores ke liye ki humne yeh changes kiye the) and then for comparison, he ran this command in terminal: python –m evals.compare --all (‘all’ likh ke hum yeh bata rahe hain ki compare all the metrics).
+
+I am not doing this currently because it will cost a significant amount of money. But before running the run_suite.py, make sure to delete the chroma_store folder as retriever pipeline will also run here.
