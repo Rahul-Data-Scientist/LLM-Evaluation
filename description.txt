@@ -43,3 +43,8 @@
 2. Now, sir did this in the lecture: changed chunk_size to 500 and chunk_overlap to 100 and ran this command in terminal to perform regression testing: python –m evals.run_suite --label “chunk=500 overlap=100” (label use karke hum candidate.json file mein ek metadata add kar de rahe hain yeh wala candidate scores ke liye ki humne yeh changes kiye the) and then for comparison, he ran this command in terminal: python –m evals.compare --all (‘all’ likh ke hum yeh bata rahe hain ki compare all the metrics).
 
 I am not doing this currently because it will cost a significant amount of money. But before running the run_suite.py, make sure to delete the chroma_store folder as retriever pipeline will also run here.
+
+## Lecture 19 - Online RAG Evaluation: Monitoring Production LLMs with LangSmith with Code Demo | CampusX
+1. Added langsmith credentials in .env file to enable langsmith tracing
+2. Ran rag_pipeline.py multiple times with different questions to create multiple traces in langsmith
+3. Created eval_online.py in the evals folder and ran it in a separate terminal as it involves an infinite while loop.
